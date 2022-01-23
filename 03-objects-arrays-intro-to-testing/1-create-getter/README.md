@@ -20,7 +20,9 @@ const obj = {
 
 ```javascript
 function createGetter(field) {
-  /* ... */
+  return (obj) => {
+    return obj[field]
+  }
 }
 
 const product = {
