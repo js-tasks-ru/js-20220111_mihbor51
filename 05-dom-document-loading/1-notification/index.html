@@ -12,9 +12,11 @@
 
   btn1.addEventListener('click', () => {
     const notification = new NotificationMessage('Hello World', {
-      duration: 2000,
+      duration: 20000000,
       type: 'success'
     });
+
+    console.log(notification.element);
 
     notification.show();
   });
